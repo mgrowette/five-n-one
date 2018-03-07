@@ -4,7 +4,8 @@ const uuid = require('uuid')
 
 const createStarWars = s => ({
   id: uuid.v4(),
-  name: s
+  name: s,
+  value: null
 })
 
 //name: `${starWarsObj.random()}` for names in a random order

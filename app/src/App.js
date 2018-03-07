@@ -1,5 +1,10 @@
 import React from 'react'
 import { BrowserRouter, Route, Link, Switch } from 'react-router-dom'
+import Colors from './pages/colors'
+import StarWars from './pages/starwars'
+import BuzzWords from './pages/buzzwords'
+import FortuneCookies from './pages/fortune-cookies'
+import Emojis from './pages/emojis'
 
 const Menu = props => {
   return (
@@ -32,6 +37,11 @@ const App = props => {
       <div>
         <Switch>
           <Route exact path="/" component={Menu} />
+          <Route path="/colors" component={Colors} />
+          <Route path="/starwars" component={StarWars} />
+          <Route path="/buzzwords" component={BuzzWords} />
+          <Route path="/fortune-cookies" component={FortuneCookies} />
+          <Route path="/emojis" component={Emojis} />
         </Switch>
       </div>
     </BrowserRouter>

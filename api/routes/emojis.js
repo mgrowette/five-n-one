@@ -4,8 +4,8 @@ const uuid = require('uuid')
 
 const createEmoji = e => ({
   id: uuid.v4(),
-  name: e,
-  value: prop(e, emojisObj)
+  name: prop(e, emojisObj),
+  value: null
 })
 
 const emojis = map(createEmoji, keys(emojisObj))

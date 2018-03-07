@@ -4,8 +4,8 @@ const uuid = require('uuid')
 
 const createFortune = f => ({
   id: uuid.v4(),
-  name: f,
-  value: prop(f, fortuneCookiesObj)
+  name: prop(f, fortuneCookiesObj),
+  value: null
 })
 
 const fortuneCookies = map(createFortune, keys(fortuneCookiesObj))

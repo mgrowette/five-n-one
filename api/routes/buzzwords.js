@@ -4,8 +4,8 @@ const { map, keys, prop } = require('ramda')
 
 const createBuzzWord = b => ({
   id: uuid.v4(),
-  name: b,
-  value: prop(b, buzzWordsObj)
+  name: prop(b, buzzWordsObj),
+  value: null
 })
 
 const buzzWords = map(createBuzzWord, keys(buzzWordsObj))
