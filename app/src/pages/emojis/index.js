@@ -10,7 +10,7 @@ const Emojis = props => {
   return (
     <div>
       <h1>Emojis</h1>
-      <ul>{map(li, props.names)}</ul>
+      <ul>{map(li, props.emojis)}</ul>
     </div>
   )
 }
